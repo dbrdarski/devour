@@ -2,7 +2,7 @@ const deserialize = require('./_deserialize')
 const _ = require('lodash')
 
 function needsDeserialization (method) {
-  return ['GET', 'PATCH', 'POST'].indexOf(method) !== -1
+  return ['GET', 'PATCH', 'POST', 'DELETE'].indexOf(method) !== -1
 }
 
 function isCollection (responseData) {
